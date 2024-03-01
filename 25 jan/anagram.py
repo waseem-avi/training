@@ -9,4 +9,4 @@ def are_anagrams(str1, str2):
 input_str1 = "listen"
 input_str2 = "silent"
 result = are_anagrams(input_str1, input_str2)
-print("Are Anagrams:", result)
+print("Are Anagrams:", result
