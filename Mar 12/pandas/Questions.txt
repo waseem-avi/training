@@ -1,0 +1,57 @@
+SF Salaries Exercise
+
+Welcome to a quick exercise for you to practice your pandas skills! We will be using the SF Salaries Dataset from Kaggle! Just follow along and complete the tasks outlined in bold below. The tasks will get harder and harder as you go along.
+
+1. Read Salaries.csv as a dataframe called sal.
+2.Check the head of the DataFrame.
+3.Use the .info() method to find out how many entries there are
+4.What is the average BasePay ?
+a. 66325.44884050643
+5.What is the highest amount of OvertimePay in the dataset ?
+a.245131.88
+6.What is the job title of JOSEPH DRISCOLL ? Note: Use all caps, otherwise you may get an answer that doesn't match up (there is also a lowercase Joseph Driscoll). 
+a.24    CAPTAIN, FIRE SUPPRESSION
+Name: JobTitle, dtype: object
+7. How much does JOSEPH DRISCOLL make (including benefits)?
+a.24    270324.91
+Name: TotalPayBenefits, dtype: float64
+8.What is the name of highest paid person (including benefits)?
+a.
+Id	EmployeeName	JobTitle	BasePay	OvertimePay	OtherPay	Benefits	TotalPay	TotalPayBenefits	Year	Notes	Agency	Status
+0	1	NATHANIEL FORD	GENERAL MANAGER-METROPOLITAN TRANSIT AUTHORITY	167411.18	0.0	400184.25	NaN	567595.43	567595.43	2011	NaN	San Francisco	NaN
+
+9.What is the name of lowest paid person (including benefits)? Do you notice something strange about how much he or she is paid?
+a.
+Id	EmployeeName	JobTitle	BasePay	OvertimePay	OtherPay	Benefits	TotalPay	TotalPayBenefits	Year	Notes	Agency	Status
+148653	148654	Joe Lopez	Counselor, Log Cabin Ranch	0.0	0.0	-618.13	0.0	-618.13	-618.13	2014	NaN	San Francisco	NaN
+
+10.What was the average (mean) BasePay of all employees per year? (2011-2014) ?
+a.Year
+2011    63595.956517
+2012    65436.406857
+2013    69630.030216
+2014    66564.421924
+Name: BasePay, dtype: float64
+11.How many unique job titles are there? 
+a.2159
+
+12. What are the top 5 most common jobs? 
+a.
+Transit Operator                7036
+Special Nurse                   4389
+Registered Nurse                3736
+Public Svc Aide-Public Works    2518
+Police Officer 3                2421
+Name: JobTitle, dtype: int64
+
+13.How many Job Titles were represented by only one person in 2013? (e.g. Job Titles with only one occurence in 2013?) 
+a.202
+
+14.How many people have the word Chief in their job title? (Bonus)
+a. 477
+
+15. Bonus: Is there a correlation between length of the Job Title string and Salary?
+a.
+	title_len	TotalPayBenefits
+title_len	1.000000	-0.036878
+TotalPayBenefits	-0.036878	1.000000
