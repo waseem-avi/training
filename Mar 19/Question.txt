@@ -1,0 +1,19 @@
+1.Sample problem of predicting home price in monroe, new jersey (USA)
+Below is the table containing home prices in monroe twp, NJ. Here price depends on area (square feet), bed rooms and age of the home (in years). Given these prices we have to predict prices of new homes based on area, bed rooms and age.
+
+Find price of home with 3000 sqr ft area, 3 bedrooms, 40 year old
+
+A. 498408.25158031
+
+Find price of home with 2500 sqr ft area, 4 bedrooms, 5 year old
+
+A.578876.03748933
+
+2.there is hiring.csv. This file contains hiring statics for a firm such as experience of candidate, his written test score and personal interview score. Based on these 3 factors, HR will decide the salary. Given this data, you need to build a machine learning model for HR department that can help them decide salaries for future candidates. Using this predict salaries for following candidates,
+
+2 yr experience, 9 test score, 6 interview score
+
+12 yr experience, 10 test score, 10 interview score
+
+Answer
+53713.86 and 93747.79
