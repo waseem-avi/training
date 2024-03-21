@@ -1,0 +1,38 @@
+1.Linear Regression
+
+
+Amazon_cloths sells cloths online. Customers come in to the store, have meetings with a personal stylist, then they can go home and order either on a mobile app or website for the clothes they want.
+
+The company is trying to decide whether to focus their efforts on their mobile app experience or their website.
+Following is predict is analysis for this company
+
+Just follow the steps below to analyze the customer data (it's fake, don't worry I didn't give you real credit card numbers or emails).
+
+Read in the Ecommerce Customers csv file as a DataFrame called customers.
+Data Analysis
+Use jointplot to create a 2D hex bin plot comparing Time on App and Length of Membership.
+explore these types of relationships across the entire data set
+Based off this plot what looks to be the most correlated feature with Yearly Amount Spent?
+Create a linear model plot (using seaborn's lmplot) of  Yearly Amount Spent vs. Length of Membership.
+Training and Testing Data
+Now that we've explored the data a bit, let's go ahead and split the data into training and testing sets.
+Set a variable X equal to the numerical features of the customers and a variable y equal to the "Yearly Amount Spent" column. 
+Use model_selection.train_test_split from sklearn to split the data into training and testing sets. Set test_size=0.3 and random_state=101
+Training the Model
+Now its time to train our model on our training data!
+ Import LinearRegression from sklearn.linear_model
+Create an instance of a LinearRegression() model named.
+Predicting Test Data
+Now that we have fit our model, let's evaluate its performance by predicting off the test values!
+Use lm.predict() to predict off the X_test set of the data.
+Create a scatterplot of the real test values versus the predicted values.
+Evaluating the Model
+Let's evaluate our model performance by calculating the residual sum of squares and the explained variance score (R^2).
+Calculate the Mean Absolute Error, Mean Squared Error, and the Root Mean Squared Error.
+Residuals
+Let's quickly explore the residuals to make sure everything was okay with our data.
+Plot a histogram of the residuals and make sure it looks normally distributed. Use either seaborn distplot, or just plt.hist()
+Conclusion
+We still want to figure out the answer to the original question, do we focus our efforst on mobile app or website development? Or maybe that doesn't even really matter, and Membership Time is what is really important.  Let's see if we can interpret the coefficients at all to get an idea.
+Do you think the company should focus more on their mobile app or on their website?
+ans: MobileApp
