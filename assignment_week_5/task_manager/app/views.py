@@ -6,7 +6,7 @@ from .forms import CustomUserCreationForm, TaskForm
 from .models import Task, Profile
 
 def index(request):
-    return HttpResponse("Hello, world. This is your Django app.")
+    return render(request , 'home.html')
 
 def task_list(request):
     user_class = None
