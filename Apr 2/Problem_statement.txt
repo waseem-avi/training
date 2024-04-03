@@ -1,0 +1,12 @@
+1.
+
+A company has gathered data on salaries, company names, job roles, and educational qualifications of employees. The dataset includes information about whether each employee's salary exceeds $100k (1) or not (0). Using this data, the company aims to build a decision tree classification model to predict whether a new employee, based on their company, job role, and degree, is likely to have a salary exceeding $100k.
+
+
+2.
+
+
+
+
+
+In this file using following columns build a model to predict if person would survive or not,Pclass, Sex, Age, Fare Calculate score of your model
