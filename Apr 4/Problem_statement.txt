@@ -1,0 +1,79 @@
+Diabetes Prediction Model
+
+
+Data Description
+
+
+The Behavioral Risk Factor Surveillance System (BRFSS) is a health-related telephone survey that 
+is collected annually by the CDC. Each year, the survey collects responses from over 400,000 
+Americans on health-related risk behaviors, chronic health conditions, and the use of 
+preventative services. It has been conducted every year since 1984. For this project, a csv of 
+the dataset available on Kaggle for the year 2015 was used. This original dataset contains 
+responses from 441,455 individuals and has 330 features. These features are either questions 
+directly asked of participants, or calculated variables based on individual participant 
+responses.
+This dataset, diabetes _ 012 _ health _ indicators _ BRFSS2015.csv, is a clean dataset of 253,
+680 survey responses to the CDC's BRFSS2015. The target variable Diabetes_012 has 3 classes. 
+There is class imbalance in this dataset. This dataset has 21 feature variables
+0 is for No Diabetes or only during pregnancy
+1 is for Prediabetes, and
+2 is for Diabetes.
+Research in the field has identified the following as important risk factors for diabetes and 
+other chronic illnesses like heart disease (not in strict order of importance):
+Blood Pressure (high)
+Cholesterol (high)
+Smoking
+Diabetes
+Obesity
+Age
+Sex
+Race
+Diet
+Exercise
+Alcohol Consumption
+BMI
+Household Income
+Marital Status
+Sleep
+Time since last checkup
+Education
+Health Care Coverage
+Mental Health
+Here, Diabetes_012 is our target variable and we will try to predict whether a person has 
+diabetes or not based on the 21 features using bagging, specifically the Random Forest 
+algorithm, which is an ensemble method based on bagging.
+
+
+
+
+Conclusion
+
+
+: The accuracy of the classifier on the validation set is approximately 0.848 or . This metric 
+measures the overall correctness of the classifier's predictions.: The classification report 
+provides additional metrics such as precision, recall, and F1-score for each class. Here's a 
+breakdown:
+For Class 0 (Non-diabetic):
+Precision is approximately 0.86, which means that among the instances predicted as class 0, 
+Recall is approximately 0.98, which means that among all the actual class 0.0 instances, 
+, which is the harmonic mean of precision and recall.
+For Class 1 (Pre-diabetic):
+Precision is 0.0, which means that  This might indicate an issue with class imbalance or data 
+quality.
+Recall is 0.0, indicating that 
+For class 2.0 (Diabetec):
+Precision is approximately 0.56, indicating that 
+Recall is approximately 0.16, indicating that 
+: The confusion matrix provides a detailed breakdown of true positives, true negatives, false 
+positives, and false negatives for each class. It allows you to see how the classifier's 
+predictions match with the actual classes.
+For Class 0: There are 41,884 true positives (correctly predicted), 0 false positives, and 820 
+false negatives.
+For Class 1: There are 0 true positives, 0 false positives, and 941 false negatives.
+For Class 2: There are 1,132 true positives, 0 false positives, and 5,959 false negatives.
+The "UndefinedMetricWarning" indicates that precision and F1-score are ill-defined for Class 1 
+because there are no predicted samples for this class, likely due to a lack of Class 1 instances 
+in the validation set or an issue with class imbalance.
+Overall, the model appears to perform well for Class 0 but struggles with Class 1, possibly due 
+to data imbalance or data quality issues for that class. Further analysis and data preprocessing 
+may be needed to improve performance on Class 1.
